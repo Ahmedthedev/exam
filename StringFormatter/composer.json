@@ -1,5 +1,16 @@
 {
     "name": "apple/string-formatter",
+
+      "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
     "require": {
         "phpunit/phpunit": "5.7",
         "friendsofphp/php-cs-fixer": "^2.3"
