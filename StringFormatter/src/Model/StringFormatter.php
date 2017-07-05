@@ -44,6 +44,15 @@ class StringFormatter
         return $str2.$this->str;
     }   
 
+    /**
+     * @return string
+     */
+    public function suffix($str2,$param=False)
+    {
+        if($param)
+            return $this->concat(ucfirst($str2));
+        return $this->concat($str2);
+    } 
 
 
 }

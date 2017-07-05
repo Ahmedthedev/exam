@@ -41,6 +41,15 @@ class StringFormatterTest extends TestCase
         $this->assertSame('lolStr', $this->stringFormatter->prefix('lol',true));
     }
 
+    /**
+     * test testPrefix
+     */
+    public function testSuffix()
+    {
+        $this->assertSame('strlol', $this->stringFormatter->suffix('lol'));
+        $this->assertSame('strLol', $this->stringFormatter->suffix('lol',true));
+    }
+
 
 
 
