@@ -32,5 +32,16 @@ class StringFormatterTest extends TestCase
         $this->assertSame('strLol', $this->stringFormatter->camelCase('lol'));
     }
 
-    
+    /**
+     * test testPrefix
+     */
+    public function testPrefix()
+    {
+        $this->assertSame('lolstr', $this->stringFormatter->prefix('lol'));
+        $this->assertSame('lolStr', $this->stringFormatter->prefix('lol',true));
+    }
+
+
+
+
 }

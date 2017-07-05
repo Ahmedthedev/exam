@@ -34,4 +34,16 @@ class StringFormatter
         return $this->str.$str2;
     }
 
+    /**
+     * @return string
+     */
+    public function prefix($str2,$param=False)
+    {
+        if($param)
+            return $str2.ucfirst($this->str);
+        return $str2.$this->str;
+    }   
+
+
+
 }
